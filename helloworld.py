@@ -8,3 +8,9 @@ print(first_name)
 last_name = 'Harrison'
 print(first_name + last_name)
 print('Hello ' + first_name + ' ' + last_name)
+
+sentence = 'The dog is named Sammy'
+print(sentence.upper())
+print(sentence.lower())
+print(sentence.capitalize())
+print(sentence.count('h'))
