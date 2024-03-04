@@ -24,3 +24,11 @@ current_date = datetime.now()
 print('Day: ' + str(current_date.day))
 print('Month: ' + str(current_date.month))
 print('Year: ' + str(current_date.year))
+
+
+from datetime import datetime
+birthday = input('When is your birthday (dd/mm/yyyy)?')
+
+birthday_date = datetime.strptime(birthday, '%d/%m/%Y')
+
+print('Birthday: ' + str(birthday_date))
