@@ -37,7 +37,11 @@
 # birthday_eve = birthday_date - one_day
 # print('Day before birthday: ' + str(birthday_eve))
 
+# from datetime import datetime
+# birthday = input('When is your birthday (dd/mm/yyyy)?')
+# birthday_date = datetime.strptime(birthday, '%d/%m/%Y')
+# print('Birthday: ' + str(birthday_date))
+
 from datetime import datetime
-birthday = input('When is your birthday (dd/mm/yyyy)?')
-birthday_date = datetime.strptime(birthday, '%d/%m/%Y')
-print('Birthday: ' + str(birthday_date))
+current_date = datetime.now()
+print('Today is: ' + str(current_date))
