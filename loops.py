@@ -7,9 +7,16 @@
 #     print(index)
 
 # Looping with a condition
-names = ['Christopher', 'Susan']
-index = 0
-while index < len(names):
-    print(names[index])
-    # Change the condition!!
-    index = index + 1
+# names = ['Christopher', 'Susan']
+# index = 0
+# while index < len(names):
+#     print(names[index])
+#     # Change the condition!!
+#     index = index + 1
+
+people = ['Christopher', 'Susan']
+
+print()
+for name in people:
+    print(name)
+print()
