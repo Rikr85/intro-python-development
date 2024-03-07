@@ -72,15 +72,28 @@
 # --------------------------------------------------------------
 
 # If I need to change something you only have to change it in one place
+# def get_initial(name):
+#     initial = name[0:1].upper()
+#     return initial
+
+# first_name = input('Enter yuor first name: ')
+# first_name_initial = get_initial(first_name)
+
+# last_name = input('Enter your last name: ')
+# last_name_initial = get_initial(last_name)
+
+# print('Your initials are: ' +  first_name_initial \
+#       + last_name_initial)
+# --------------------------------------------------------------
+# Functions that return values allow clever code but you might 
+# trade readability for less code
+
 def get_initial(name):
     initial = name[0:1].upper()
     return initial
-
-first_name = input('Enter yuor first name: ')
-first_name_initial = get_initial(first_name)
-
+first_name = input('Enter your first name: ')
 last_name = input('Enter your last name: ')
-last_name_initial = get_initial(last_name)
 
-print('Your initials are: ' +  first_name_initial \
-      + last_name_initial)
+print('Your initials are: '\
+      + get_initial(first_name) \
+      + get_initial(last_name))
