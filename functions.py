@@ -31,17 +31,27 @@
 # print_time()
 # --------------------------------------------------------------
 # Pass the task name as a parameter
-from datetime import datetime
+# from datetime import datetime
 
-# Print the current time and task name
-def print_time(task_name):
-    print(task_name)
-    print(datetime.now())
-    print()
+# # Print the current time and task name
+# def print_time(task_name):
+#     print(task_name)
+#     print(datetime.now())
+#     print()
 
-first_name = 'Susan'
-print_time('first name assigned')
+# first_name = 'Susan'
+# print_time('first name assigned')
 
-for x in range(0,10):
-    print(x)
-print_time('loop completed')
+# for x in range(0,10):
+#     print(x)
+# print_time('loop completed')
+# --------------------------------------------------------------
+# Here´s anothe example where the code looks different but we are 
+# doing the same logic over and over
+first_name = input('Enter your first name: ')
+first_name_initial = first_name[0:1]
+last_name = input('Enter your last name: ')
+last_name_initial = last_name[0:1]
+
+print('Your initials are: ' + first_name_initial \
+      + last_name_initial)
