@@ -45,13 +45,26 @@
 # for x in range(0,10):
 #     print(x)
 # print_time('loop completed')
+
 # --------------------------------------------------------------
 # Here´s anothe example where the code looks different but we are 
 # doing the same logic over and over
+# first_name = input('Enter your first name: ')
+# first_name_initial = first_name[0:1]
+# last_name = input('Enter your last name: ')
+# last_name_initial = last_name[0:1]
+
+# print('Your initials are: ' + first_name_initial \
+#       + last_name_initial)
+# --------------------------------------------------------------
+def get_initial(name):
+    initial = name[0:1]
+    return initial
 first_name = input('Enter your first name: ')
-first_name_initial = first_name[0:1]
+first_name_initial = get_initial(first_name)
+
 last_name = input('Enter your last name: ')
-last_name_initial = last_name[0:1]
+last_name_initial = get_initial(last_name)
 
 print('Your initials are: ' + first_name_initial \
       + last_name_initial)
