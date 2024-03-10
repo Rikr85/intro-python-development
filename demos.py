@@ -13,8 +13,8 @@
 # #Only available in Python 3  
 # output = f'Hello, {first_name}{last_name}'
 # print(output)
-# import helpers
-# helpers.display('Sample message test', True)
+import helpers
+helpers.display('Sample message test', True)
 
 from helpers import display
 display('Sample message', True)
