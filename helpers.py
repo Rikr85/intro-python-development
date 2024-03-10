@@ -15,3 +15,13 @@ display('Not a warning')
 # import specific items into current namespace
 from helpers import display
 display('Not a warning')
+
+# Installing packages
+# Install an individual package
+pip install colorama
+
+# Install from a list of packages
+pip install -r requirements.txt 
+
+# requirements.txt
+colorama
