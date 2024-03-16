@@ -13,11 +13,23 @@
 # for item in results['description']['tags']:
 #     print(item)
 
-# Create a dictionary object
-person_dict = {'first':'Christopher', 'last':'Harrison'}
-# Add additional key pairs as needed to dictionary
-person_dict['City']='Seattle'
+# # Create a dictionary object
+# person_dict = {'first':'Christopher', 'last':'Harrison'}
+# # Add additional key pairs as needed to dictionary
+# person_dict['City']='Seattle'
+
+# # Convert dictionary to JSON object
+# person_dict = json.dumps(person_dict)
+# print(person_dict)
+
+person_dict = {'first':'Christopher','last':'Harrison'}
+
+# Create staff dictionary which assigns a person to a role
+staff_dict = {}
+staff_dict['Program Manager']=person_dict
 
 # Convert dictionary to JSON object
-person_dict = json.dumps(person_dict)
-print(person_dict)
+staff_json = json.dumps(staff_dict)
+
+# Print JSON object
+print(staff_json)
